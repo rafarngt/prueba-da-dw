@@ -18,8 +18,8 @@ This repository is a challenge for the Data Engineer role, which uses the follow
 >| |- |.. utils.py           
 >| |- app.py           main project file
 >| |- requirements.txt         Libraries to install 
->|- dags/  contains dag for migration, backup and restore tables
->|- dags/backups_bigquery_to_gcs.py  DAG for create backups of BQ tables
+>|- airflow/  contains dag and airflow configurations
+>|- airflow/dags/orquestador_dag.py  dag to all pipeline
 >|- data/csv/.. .csv files
 >|- data/ddl/.. .sql ddl files
 >|- data/dml/.. .sql dml files
@@ -115,7 +115,7 @@ locate us inside the api folder:
 
 install dependencies.
 > ```
-> pip install -r requitements.txt
+> pip install -r requirements.txt
 > ```
 
 run locally
@@ -190,5 +190,9 @@ you also need to load the variables used by the different dags, so go to `Admin-
 ### GCP Usage
 
 #### BiQuery:
+
+> ```shell
+> bq mk --table --schema incidentes.json prueba-da-dw:raw.incidentes 
+> ```
 
 The raw dataset must be created for the project. 

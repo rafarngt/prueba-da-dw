@@ -1,0 +1,322 @@
+[
+    {
+      "name": "incident_number",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "exposure_number",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "id",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "address",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "incident_date",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "call_number",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "alarm_dttm",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "arrival_dttm",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "close_dttm",
+      "type": "TIMESTAMP",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "city",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "zipcode",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "battalion",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "station_area",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "suppression_units",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "suppression_personnel",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "ems_units",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "ems_personnel",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "other_units",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "other_personnel",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "first_unit_on_scene",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "fire_fatalities",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "fire_injuries",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "civilian_fatalities",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "civilian_injuries",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_alarms",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "primary_situation",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "mutual_aid",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "action_taken_primary",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "action_taken_secondary",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "action_taken_other",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detector_alerted_occupants",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "property_use",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "supervisor_district",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "neighborhood_district",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "point",
+      "type": "GEOGRAPHY",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "estimated_contents_loss",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "area_of_fire_origin",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "ignition_cause",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "ignition_factor_primary",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "ignition_factor_secondary",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "heat_source",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "item_first_ignited",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "human_factors_associated_with_ignition",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "estimated_property_loss",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "structure_type",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "structure_status",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "floor_of_fire_origin",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "fire_spread",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "no_flame_spead",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_floors_with_minimum_damage",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_floors_with_significant_damage",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_floors_with_heavy_damage",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_floors_with_extreme_damage",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detectors_present",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detector_type",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detector_operation",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detector_effectiveness",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "detector_failure_reason",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "automatic_extinguishing_system_present",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "automatic_extinguishing_sytem_type",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "automatic_extinguishing_sytem_perfomance",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "automatic_extinguishing_sytem_failure_reason",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "number_of_sprinkler_heads_operating",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+    },
+    {
+      "name": "box",
+      "type": "STRING",
+      "mode": "NULLABLE"
+    }
+  ]

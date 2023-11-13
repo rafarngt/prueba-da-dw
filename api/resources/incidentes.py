@@ -9,19 +9,8 @@ from io import StringIO
 
 class Incidentes(Resource):
     section = 'incidentes'
-    client = Socrata("data.sfgov.org", None)
-
     parser = reqparse.RequestParser()
-    #parser.add_argument('fecha', type=self.fecha_valida, help='Fecha en formato YYYY-MM-DD', required=True, location='args')
     parser.add_argument('fecha', type=str, help='Fecha en formato YYYY-MM-DD')
-
-    def fecha_valida(fecha_str):
-        try:
-            # Intenta parsear la fecha y verifica el formato
-            datetime.strptime(fecha_str, '%Y-%m-%d')
-            return fecha_str
-        except ValueError:
-            raise argparse.ArgumentTypeError("Formato de fecha inválido. Debe ser YYYY-MM-DD.")
 
 
     def get(self,fecha):
@@ -50,6 +39,9 @@ class Incidentes(Resource):
             # gcs_response = utilsFuntions.save_file_to_gcs(filename, fecha, gcs_client,gcs_bucket )
 
             
-            return {'message': f'Registros Generados Correctamente, archivo: {filename}'} 
+            return {
+                    'message': f'Registros Generados Correctamente, archivo: {filename}',
+                    'filename':filename
+                    } 
         except Exception as e:
             return {'message': f'Error al procesar el archivo: {str(e)}'}, 500
